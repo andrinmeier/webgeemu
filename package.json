@@ -18,7 +18,7 @@
     "test:e2e:dev": "start-server-and-test dev http://localhost:3000 \"npx playwright test\"",
     "pretest:e2e:run": "npm run build",
     "test:e2e:run": "cross-env PORT=8811 start-server-and-test start:mocks http://localhost:8811 \"npx playwright test\"",
-    "typecheck": "tsc -b && tsc -b e2e",
+    "typecheck": "tsc -b",
     "validate": "run-p \"test -- --run\" lint typecheck test:e2e:run",
     "storybook": "run-p dev:css storybook:dev",
     "storybook:dev": "start-storybook -p 6006",
